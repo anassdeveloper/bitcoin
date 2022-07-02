@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --color-dark-blue:#003049;
+  --color-red:#d62828;
+  --color-oranged:#f77f00;
+  --color-y-light:#fcbf49;
+  --color-gray:#eae2b7;
+  --font-arima: 'Arima', cursive;
+  --font-finlandica: 'Finlandica', sans-serif;
+}
+body{
+    background-color: var(--color-dark-blue);
+}
+.container{
+    width: 100vw;
+    max-width: 70rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+.card-head{
+    text-align: center;
+    margin: 1rem;
+} 
+.card-head h3{
+    color: var(--color-oranged);
+    font-size: 3.5rem;
+    font-family: var(--font-arima);
+    font-style: italic;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.808);
+}
+.card-head p {
+    color: var(--color-gray);
+    font-family: var(--font-finlandica);
+    line-height: 1.5;
+}
+.card-head p:last-child{
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+}
+.card-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+.card-boxes .box{
+    background:#fff;
+    padding: 1rem;
+    margin: 0 .5rem;
+    border-radius: 4px;
+}
+.card-boxes .box h4{
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-red);
+}
+.card-boxes .box p{
+    color: var(--color-y-light);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.card-boxes .box p i{
+    color: #003049;
+}
+
+@media screen and (max-width:600px) {
+    .card .card-boxes{
+        flex-direction: column;
+        
+    }
+    .card .card-boxes .box{
+        margin-top: 1rem;
+    }
+}
